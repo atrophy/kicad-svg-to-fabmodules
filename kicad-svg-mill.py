@@ -76,7 +76,7 @@ for f in args.files:
 						break
 
 		for row in xrange(0,rows):
-			if png.getpixel((row,0)) == 255:
+			if png.getpixel((0,row)) == 255:
 				for col in xrange(0,columns):
 					if png.getpixel((col,row)) == 255:
 						png.putpixel((col,row),0)
